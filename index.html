@@ -16,9 +16,17 @@
          <!-- 
             **navbar wrapping starts here!
             navbar-expand-lg: expands on large screen, shrinks on smaller screen
-            navbar-dark bg-dark: dark themed 
+            -> changed nav-bar colour to match SoftInn's gradient theme
          -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" 
+             style="background: linear-gradient(91.69deg, 
+                    rgb(47, 72, 88) -73.99%, 
+                    rgb(0, 98, 117) -44.93%, 
+                    rgb(0, 125, 126) -7.5%, 
+                    rgb(0, 151, 112) 19.68%, 
+                    rgb(50, 172, 76) 51.63%, 
+                    rgb(142, 188, 0) 85.66%);"
+            > 
             <div class="container-fluid">
 
                 <!-- Navi-bar Title + clikcable title to redirect to homepage...etc.. -->
@@ -46,16 +54,93 @@
                             <a class="nav-link" href="https://www.mysoftinn.com/about-us">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.mysoftinn.com/contact-us">Contact</a>
+                            <a class="nav-link" href="https://www.mysoftinn.com/contact-us">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!-- TODO: Implement Task 2 here -->
+        <div class="container mt-4">
+            <div class="row">
+
+                <!-- Card #1 (Left) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://www.mysoftinn.com/images/shared-file/product-icon/icon-pms.svg" 
+                             class="card-img-top" 
+                             alt="Image: Property Management System (PMS) by SoftInn" 
+                        >
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Property Management System (PMS)</h5>
+                            <p class="card-text">Easy-to-use front desk system that facilitates day-to-day hotel operations</p>
+                            <a href="https://www.mysoftinn.com/hotel-pms-front-desk-system" class="btn btnoutline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card #2 (Middle) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://www.mysoftinn.com/images/shared-file/product-icon/icon-channel.svg" 
+                             class="card-img-top" 
+                             alt="Image: Hotel Channel Manager by SoftInn " 
+                        >
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hotel Channel Manager</h5>
+                            <p class="card-text">Sync reservation, room rates and availability with OTAs (e.g. Booking.com, Agoda, Airbnb etc.)</p>
+                            <a href="https://www.mysoftinn.com/hotel-channel-manager" class="btn btnoutline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card #3 (Right) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://www.mysoftinn.com/images/shared-file/product-icon/icon-cms.svg" 
+                             class="card-img-top" 
+                             alt="Image: Hotel Website Content Management by SoftInn " 
+                        >
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hotel Website Content Management</h5>
+                            <p class="card-text">User-friendly website content management system built for hotelier</p>
+                            <a href="https://www.mysoftinn.com/hotel-website-with-cms" class="btn btnoutline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Task 2 Ends here -->
+
+
         <!-- TODO: Implement Task 3 here -->
     </div>
 </body>
+
+<!-- Page Styling -->
+<style>
+
+    /* 1. Card Image Dimension */
+    .card-img-top {
+        height: 200px;
+        object-fit: contain;
+    }
+
+    /* 2. Learn More Button */
+    .btnoutline {
+        color: #669900;
+        border: 1px solid #669900;
+        background-color: #ffffff;
+        border-radius: 999px;
+    }
+
+    .btnoutline:hover {
+        background-color: #d8eac4;
+        color: #4d7c00;
+    }
+
+</style>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
