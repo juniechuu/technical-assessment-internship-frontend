@@ -18,7 +18,7 @@
             navbar-expand-lg: expands on large screen, shrinks on smaller screen
             -> changed nav-bar colour to match SoftInn's gradient theme
          -->
-        <nav class="navbar navbar-expand-lg navbar-dark" 
+        <nav class="navbar navbar-expand-lg navbar-dark rounded-3" 
              style="background: linear-gradient(91.69deg, 
                     rgb(47, 72, 88) -73.99%, 
                     rgb(0, 98, 117) -44.93%, 
@@ -115,7 +115,40 @@
 
 
         <!-- TODO: Implement Task 3 here -->
+        <div class="container mt-5 mb-5">
+            <!-- Title -->
+            <h2 class="text-center mb-4">Contact Us</h2>
+        
+            <!-- Form -->
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <!-- Border -->
+                    <div class="border border-3 rounded-4 p-4 shadow-sm">
+                        <!-- Form Input -->
+                        <form id="contactUs-form">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                <label for="email">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Task 3 Ends here -->    
+
 </body>
 
 <!-- Page Styling -->
